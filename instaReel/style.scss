@@ -31,15 +31,17 @@ main {
       scroll-snap-align: start; // <--- ADD THIS
       height: 100%;
       position: relative;
-      margin-bottom: 1rem;
+      // margin-bottom: 1rem;
+      padding: 1rem 0rem;
 
       // padding: 1rem;
-      width: 30rem;
+      width: 25rem;
 
       video {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        border-radius: 1rem;
       }
 
       #bttm {
@@ -95,16 +97,22 @@ main {
         align-items: center;
         justify-content: center;
 
-        #likelogo {
+        .likelogo {
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           i {
             font-size: 2rem;
+            pointer-events: none;
           }
           p {
             font-size: 1rem;
+            pointer-events: none;
+          }
+
+          .ri-heart-fill{
+            color: red;
           }
         }
 

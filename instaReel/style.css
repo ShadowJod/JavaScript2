@@ -31,14 +31,15 @@ main #allReels .reel {
   scroll-snap-align: start;
   height: 100%;
   position: relative;
-  margin-bottom: 1rem;
-  width: 30rem;
+  padding: 1rem 0rem;
+  width: 25rem;
 }
 main #allReels .reel video {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 1rem;
 }
 main #allReels .reel #bttm {
   position: absolute;
@@ -94,17 +95,22 @@ main #allReels .reel #alllogo {
   align-items: center;
   justify-content: center;
 }
-main #allReels .reel #alllogo #likelogo {
+main #allReels .reel #alllogo .likelogo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-main #allReels .reel #alllogo #likelogo i {
+main #allReels .reel #alllogo .likelogo i {
   font-size: 2rem;
+  pointer-events: none;
 }
-main #allReels .reel #alllogo #likelogo p {
+main #allReels .reel #alllogo .likelogo p {
   font-size: 1rem;
+  pointer-events: none;
+}
+main #allReels .reel #alllogo .likelogo .ri-heart-fill {
+  color: red;
 }
 main #allReels .reel #alllogo #commentlogo {
   display: flex;
