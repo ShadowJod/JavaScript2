@@ -18,6 +18,8 @@ main {
   align-items: center;
   justify-content: center;
 
+
+
   #allReels {
     scroll-snap-type: y mandatory;
     overflow-y: auto;
@@ -28,6 +30,7 @@ main {
       display: none;
     }
     .reel {
+
       scroll-snap-align: start; // <--- ADD THIS
       height: 100%;
       position: relative;
@@ -57,14 +60,15 @@ main {
           gap: 10px;
           margin-left: 20px;
           img {
-            height: 35px;
-            width: 35px;
+            height: 30px;
+            width: 30px;
             border-radius: 50%;
             object-fit: cover;
             object-position: center;
           }
           h2 {
-            color: white;
+            color: black;
+            font-size: 1rem;
           }
           button {
             height: fit-content;
@@ -76,7 +80,7 @@ main {
 
         #text {
           margin-left: 20px;
-          color: white;
+          color: black;
           p {
             font-size: 1.3rem;
           }
@@ -139,6 +143,17 @@ main {
           p {
             font-size: 1rem;
           }
+        }
+      }
+      .volume{
+        position: absolute;
+        top: 5%;
+        z-index: 99999;
+        font-size: 2rem;
+        right: 2%;
+        i{
+          color: black;
+          pointer-events: none;
         }
       }
     }
