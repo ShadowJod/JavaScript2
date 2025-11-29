@@ -7,11 +7,25 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: black;
+  overflow: hidden;
+  background: black;
+}
+
+:root {
+  --x: 50vw;
+  --y: 50vh;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1761839258753-85d8eecbbc29?q=80&w=1170&auto=format&fit=crop);
+  background-size: cover;
+  background-position: center;
 }
 
 .box {
   height: 100%;
   width: 100%;
-  background: radial-gradient(20px at 200px 200px, transparent, blue);
+  pointer-events: none;
+  background: radial-gradient(200px at var(--x) var(--y), transparent, rgba(0, 0, 0, 0.95) 90%);
+  transition: background 0.05s linear;
 }/*# sourceMappingURL=style.css.map */
