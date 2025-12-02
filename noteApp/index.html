@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head> 
+  <body>
+    <div class="popup">
+      <form>
+        <h2>New Call</h2>
+
+        <label>Image URL</label>
+        <input required type="text" placeholder="https://example.com/photo.jpg" />
+
+        <label>Full Name</label>
+        <input required type="text" placeholder="Enter full name" />
+
+        <label>Home Town</label>
+        <input required type="text" placeholder="Enter home town" />
+
+        <label>Purpose</label>
+        <textarea required placeholder="e.g., Quick appointment note"></textarea>
+
+        <label>Category</label>
+
+        <div class="radio-group">
+          <label><input required type="radio" name="cat" /> Emergency</label>
+          <label><input required type="radio" name="cat" /> Important</label>
+          <label><input required type="radio" name="cat" /> Urgent</label>
+          <label><input required type="radio" name="cat" /> No Rush</label>
+        </div>
+
+        <button class="create">Create Note</button>
+        <button id="close" class="close">Close</button>
+    </form>
+    </div>
+
+
+    <div class="wrapper">
+      <!-- Left Buttons -->
+      <div class="side-buttons">
+        <button class="btn"><i class="ri-arrow-up-line"></i></button>
+        <button id="add-note" class="btn"><i class="ri-add-line"></i></button>
+        <button class="btn"><i class="ri-arrow-down-line"></i></button>
+      </div>
+
+      <!-- User Card -->
+      <div class="card">
+        <div class="profile">
+          <img src="https://i.pravatar.cc/100" alt="" />
+        </div>
+
+        <div class="info">
+          <h3>Fatima Uma</h3>
+
+          <div class="details">
+            <div>
+              <p>Home town</p>
+              <p class="value">Singapore</p>
+            </div>
+
+            <div>
+              <p>Bookings</p>
+              <p class="value">3 times</p>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="call"><i class="ri-phone-fill"></i> Call</button>
+            <button class="msg"><i class="ri-chat-3-fill"></i> Message</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Color Dots -->
+      <div class="colors">
+        <span style="background: black"></span>
+        <span style="background: #4b0082"></span>
+        <span style="background: #5a2e0f"></span>
+        <span style="background: #1baaa2"></span>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
