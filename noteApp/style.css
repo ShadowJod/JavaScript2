@@ -109,118 +109,87 @@ body {
   background: #b00;
 }
 
-.wrapper {
+.container {
+  border-radius: 1rem;
+  background-color: #111;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 3rem;
+  padding: 1rem;
 }
-
-/* Left Buttons */
-.side-buttons {
+.container .side-buttons {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1rem;
 }
-.side-buttons .btn {
-  height: 40px;
-  width: 40px;
+.container .side-buttons button {
+  font-size: 1.5rem;
+  background: transparent;
+  color: whitesmoke;
   border-radius: 50%;
-  background: #2b2b2b;
-  border: 1px solid #444;
-  color: white;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.084);
+  outline: none;
+  padding: 5px 7px;
 }
-.side-buttons .btn:hover {
-  background: #3b3b3b;
-}
-
-/* User Card */
-.card {
-  width: 350px;
-  background: #2b2b2b;
-  border-radius: 16px;
-  padding: 25px;
-  border: 1px solid #3e3e3e;
-  color: white;
-  display: flex;
-  gap: 20px;
-}
-.card .profile img {
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
-}
-.card .info {
-  width: 100%;
-}
-.card .info h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-.card .info .details {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-.card .info .details p {
-  opacity: 0.7;
-  font-size: 13px;
-}
-.card .info .details .value {
-  opacity: 1;
-  font-weight: 500;
-  font-size: 14px;
-}
-.card .info .actions {
-  display: flex;
-  gap: 12px;
-}
-.card .info .actions button {
-  flex: 1;
-  padding: 8px 0;
-  border-radius: 10px;
-  border: 1px solid #555;
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  transition: 0.2s;
-}
-.card .info .actions button i {
-  font-size: 16px;
-}
-.card .info .actions .call {
-  background: #000;
-}
-.card .info .actions .call:hover {
-  background: #111;
-}
-.card .info .actions .msg {
-  background: #3b3b3b;
-}
-.card .info .actions .msg:hover {
-  background: #4a4a4a;
-}
-
-/* Right Color Selector */
-.colors {
+.container .card {
+  border: 1px solid white;
+  padding: 2rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: whitesmoke;
 }
-.colors span {
-  height: 16px;
-  width: 16px;
+.container .card img {
+  height: 35px;
+  width: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
-  display: block;
-  cursor: pointer;
-  border: 2px solid #333;
+  background-position: center;
+}
+.container .card h2 {
+  font-size: 1rem;
+}
+.container .card .info {
+  display: flex;
+  gap: 3rem;
+}
+.container .card .info .info-left p {
+  font-size: 0.8rem;
+}
+.container .card .info .info-right p {
+  font-size: 0.8rem;
+}
+.container .card .bttn {
+  display: flex;
+  gap: 1rem;
+}
+.container .card .bttn #btn1 {
+  padding: 0.5rem 1rem;
+  color: whitesmoke;
+  background-color: black;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+}
+.container .card .bttn #btn2 {
+  padding: 0.5rem 1rem;
+  color: whitesmoke;
+  background-color: black;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+}
+.container .colors {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container .colors span {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
