@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main #taskbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding-inline: 10px;
+  background-color: #1a1a1a;
+  border-top: 1px solid rgba(255, 255, 255, 0.188);
+  justify-content: space-between;
+}
+main #taskbar #taskbar1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main #taskbar #taskbar1 #winLogo {
+  background-image: url(windowLogo.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 50px;
+}
+main #taskbar #taskbar1 #searchBar {
+  height: 35px;
+  width: 230px;
+  padding: 8px 15px;
+  background: #2c2c2c; /* dark grey like Windows */
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main #taskbar #taskbar1 #searchBar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+}
+main #taskbar #taskbar1 #searchBar .icon {
+  color: #bfbfbf; /* light grey icon color */
+}
+main #taskbar #taskbar1 #Applicationicons {
+  display: flex;
+  gap: 15px;
+}
+main #taskbar #taskbar1 #Applicationicons img {
+  height: 30px;
+  width: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #taskbar #taskbar2 {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main #taskbar #taskbar2 #bottomArrow {
+  color: white;
+}
+main #taskbar #taskbar2 #language #lan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #taskbar #taskbar2 #language #lan p {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+main #taskbar #taskbar2 #icons i {
+  color: white;
+}
+main #taskbar #taskbar2 #dateTime {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+main #taskbar #taskbar2 #dateTime p {
+  font-size: 12px;
+  font-weight: 600;
+}
+main #taskbar #taskbar2 #dateTime p:nth-child(1) {
+  align-self: flex-end;
+}
+main #top {
+  width: 100%;
+  height: calc(100% - 50px);
+  background-image: url(window11wallpaper2.png);
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=style.css.map */
