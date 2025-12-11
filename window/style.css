@@ -15,6 +15,47 @@ main {
   width: 100%;
   overflow: hidden;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+}
+main #contextMenu {
+  position: absolute;
+  background-color: #1a1a1a;
+  width: 220px;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+}
+main #contextMenu .containers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 5px;
+  border-radius: 5px;
+}
+main #contextMenu .containers #left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+main #contextMenu .containers #left i {
+  font-size: 16px;
+}
+main #contextMenu .containers #left p {
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main #contextMenu .containers #right p {
+  font-size: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main #contextMenu .containers:hover {
+  background-color: rgba(69, 69, 69, 0.5764705882);
 }
 main #taskbar {
   width: 100%;
@@ -24,19 +65,29 @@ main #taskbar {
   background-color: #1a1a1a;
   border-top: 1px solid rgba(255, 255, 255, 0.188);
   justify-content: space-between;
+  align-items: center;
 }
 main #taskbar #taskbar1 {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
 }
 main #taskbar #taskbar1 #winLogo {
-  background-image: url(windowLogo.png);
-  background-size: cover;
-  background-position: center;
   height: 100%;
-  width: 50px;
+}
+main #taskbar #taskbar1 #winLogo #logocontainer {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+}
+main #taskbar #taskbar1 #winLogo #logocontainer img {
+  width: 60px;
+}
+main #taskbar #taskbar1 #winLogo #logocontainer:hover {
+  background-color: rgba(255, 255, 255, 0.087);
 }
 main #taskbar #taskbar1 #searchBar {
   height: 35px;
@@ -59,24 +110,44 @@ main #taskbar #taskbar1 #searchBar input {
 main #taskbar #taskbar1 #searchBar .icon {
   color: #bfbfbf; /* light grey icon color */
 }
+main #taskbar #taskbar1 #searchBar:hover {
+  background-color: rgba(69, 69, 69, 0.5764705882);
+}
 main #taskbar #taskbar1 #Applicationicons {
   display: flex;
-  gap: 15px;
 }
 main #taskbar #taskbar1 #Applicationicons img {
-  height: 30px;
-  width: 30px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 44px;
+  display: block;
+  padding: 8px;
+  border-radius: 5px;
+}
+main #taskbar #taskbar1 #Applicationicons img:hover {
+  background-color: rgba(255, 255, 255, 0.087);
 }
 main #taskbar #taskbar2 {
   padding-right: 10px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 0px;
 }
 main #taskbar #taskbar2 #bottomArrow {
+  padding: 10px 5px;
+  border-radius: 5px;
   color: white;
+}
+main #taskbar #taskbar2 #bottomArrow:hover {
+  background-color: rgba(255, 255, 255, 0.087);
+}
+main #taskbar #taskbar2 #bottomArrow i {
+  font-size: 20px;
+}
+main #taskbar #taskbar2 #language {
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+main #taskbar #taskbar2 #language:hover {
+  background-color: rgba(255, 255, 255, 0.087);
 }
 main #taskbar #taskbar2 #language #lan {
   display: flex;
@@ -89,13 +160,29 @@ main #taskbar #taskbar2 #language #lan p {
   font-size: 12px;
   font-weight: 600;
 }
+main #taskbar #taskbar2 #icons {
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+}
+main #taskbar #taskbar2 #icons:hover {
+  background-color: rgba(255, 255, 255, 0.087);
+}
 main #taskbar #taskbar2 #icons i {
   color: white;
+  font-size: 17px;
+  padding: 5px;
 }
 main #taskbar #taskbar2 #dateTime {
+  padding: 5px 10px;
+  border-radius: 5px;
   color: white;
   display: flex;
   flex-direction: column;
+}
+main #taskbar #taskbar2 #dateTime:hover {
+  background-color: rgba(255, 255, 255, 0.087);
 }
 main #taskbar #taskbar2 #dateTime p {
   font-size: 12px;
