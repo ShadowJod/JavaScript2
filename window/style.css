@@ -17,6 +17,189 @@ main {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: relative;
 }
+main #windowMenu {
+  border-radius: 5px;
+  position: absolute;
+  background-color: #1a1a1a;
+  width: 500px;
+  padding: 10px 20px;
+  height: 530px;
+  top: 16%;
+  left: 1%;
+  display: none;
+  transition: all linear 0.3s;
+}
+main #windowMenu #SearchBarWin {
+  height: 35px;
+  width: 100%;
+  padding: 8px 15px;
+  background: #2c2c2c; /* dark grey like Windows */
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main #windowMenu #SearchBarWin input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+}
+main #windowMenu #SearchBarWin .icon {
+  color: #bfbfbf; /* light grey icon color */
+}
+main #windowMenu #SearchBarWin:hover {
+  background-color: rgba(69, 69, 69, 0.5764705882);
+}
+main #windowMenu #main {
+  padding: 30px;
+  width: 100%;
+}
+main #windowMenu #main #head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main #windowMenu #main #head h5 {
+  color: whitesmoke;
+  font-weight: 600;
+}
+main #windowMenu #main #head button {
+  padding: 5px 8px;
+  background: rgba(63, 63, 63, 0.3); /* <-- Transparent background */
+  color: whitesmoke;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* <-- Blur visible now */
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.126);
+  border-radius: 5px;
+}
+main #windowMenu #main #mainContent {
+  padding: 10px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main #windowMenu #main #mainContent #row1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main #windowMenu #main #mainContent #row1 .package {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #windowMenu #main #mainContent #row1 .package img {
+  height: 30px;
+  width: 30px;
+}
+main #windowMenu #main #mainContent #row1 .package p {
+  font-size: 12px;
+}
+main #windowMenu #main #mainContent #row2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main #windowMenu #main #mainContent #row2 .package {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #windowMenu #main #mainContent #row2 .package img {
+  height: 30px;
+  width: 30px;
+}
+main #windowMenu #main #mainContent #row2 .package p {
+  font-size: 12px;
+}
+main #windowMenu #main #mainContent #row3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main #windowMenu #main #mainContent #row3 .package {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #windowMenu #main #mainContent #row3 .package img {
+  height: 30px;
+  width: 30px;
+}
+main #windowMenu #main #mainContent #row3 .package p {
+  font-size: 10px;
+}
+main #windowMenu #main #head2 {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main #windowMenu #main #head2 h5 {
+  color: whitesmoke;
+  font-weight: 600;
+}
+main #windowMenu #main #head2 button {
+  padding: 5px 8px;
+  background: rgba(63, 63, 63, 0.3); /* <-- Transparent background */
+  color: whitesmoke;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* <-- Blur visible now */
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.126);
+  border-radius: 5px;
+}
+main #windowMenu #main #mainContent2 {
+  padding: 20px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main #windowMenu #main #mainContent2 #row1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main #windowMenu #main #mainContent2 #row1 .package {
+  color: whitesmoke;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+main #windowMenu #main #mainContent2 #row1 .package img {
+  height: 30px;
+  width: 30px;
+}
+main #windowMenu #main #mainContent2 #row1 .package p {
+  font-size: 12px;
+}
+main #windowMenu #main #mainContent2 #row2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main #windowMenu #main #mainContent2 #row2 .package {
+  color: whitesmoke;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+main #windowMenu #main #mainContent2 #row2 .package img {
+  height: 30px;
+  width: 30px;
+}
+main #windowMenu #main #mainContent2 #row2 .package p {
+  font-size: 12px;
+}
 main #contextMenu {
   position: absolute;
   background-color: #1a1a1a;
@@ -74,6 +257,9 @@ main #taskbar #taskbar1 {
 main #taskbar #taskbar1 #winLogo {
   height: 100%;
 }
+main #taskbar #taskbar1 #winLogo:active {
+  scale: 0.9;
+}
 main #taskbar #taskbar1 #winLogo #logocontainer {
   width: 45px;
   height: 45px;
@@ -121,6 +307,9 @@ main #taskbar #taskbar1 #Applicationicons img {
   display: block;
   padding: 8px;
   border-radius: 5px;
+}
+main #taskbar #taskbar1 #Applicationicons img:active {
+  scale: 0.9;
 }
 main #taskbar #taskbar1 #Applicationicons img:hover {
   background-color: rgba(255, 255, 255, 0.087);
